@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Profile - collapsible</title>
+    <style>
+        body {
+            background-color: #223;
+        }
+        .profile {
+            background-color: #334;
+            text-align: center;
+            padding: 20px;
+            margin: 2% auto;
+            font-family: Arial;
+            
+            width: 90%;
+            max-width: 900px;
+            min-width: 450px;
+        }
+        .profile img {
+            width: 200px;
+        }
+        .profile h2 {
+            color: white;
+        }
+        .profile ol {
+            text-align: left;
+            color: orange;
+        }
+        .profile>ol {
+            list-style: none;
+        }
+        .profile a {
+            color: orange;
+            text-decoration: none;
+        }
+        #bio {
+            /*display: none;*/
+            transition: 0.5s;
+            height: 0;
+            overflow: hidden;
+        }
+        #bio:target {
+            /*display: block;*/
+            height: 120px;
+        }
+        #interests {
+            /*display: none;*/
+            transition: 0.5s;
+            height: 0;
+            overflow: hidden;
+        }
+        #interests:target {
+            /*display: block;*/
+            height: 120px;
+        }
+        #table {
+            display: none;
+        }
+        #table:target {
+            display: block;
+        }
+        th, td {
+            border: 1px solid orange;
+            text-align: center;
+            padding: 10px;
+        }
+        #abilities {
+            display: none;
+        }
+        #abilities:target {
+            display: block;
+        }
+        #contact {
+            display: none;
+        }
+        #contact:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="profile">
+    <img src="avatar.png" alt="David Puig avatar">
+    <h2>David Puig</h2>
+
+    <ol>
+        
+        <li>
+            <h3><a href="#bio">Biography</a></h3>
+            <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, beatae necessitatibus, debitis ducimus ullam quae iusto, fugit obcaecati reprehenderit iste cupiditate laudantium. Quod tempora nihil, beatae quis harum sit praesentium mollitia cum. Numquam ipsam ad sed dicta quaerat ab earum, assumenda, iste praesentium quos velit non et dolor sunt labore?</p>
+        </li>
+        
+        <li>
+            <h3><a href="#interests">Interests</a></h3>
+            <ol id="interests">
+                <li>Pishing</li>
+                <li>Hacking</li>
+                <li>Dark web</li>
+            </ol>
+        </li>
+        
+        <li>
+            <h3><a href="#table">Experience</a> </h3>
+            <table id="table">
+                <tr>
+                    <th>Company</th>
+                    <th>Year</th>
+                    <th>Job</th>
+                  </tr>
+                  <tr>
+                    <td>Apple Inc</td>
+                    <td>2010-2015</td>
+                    <td>System Analyst</td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft</td>
+                    <td>2015-2022</td>
+                    <td>Web Developer</td>
+                  </tr>
+            </table>
+            
+        </li>
+        
+        <li>
+            <h3><a href="#abilities">Abilities</a> </h3>
+            <ul id="abilities">
+                <li>Critical thinking</li>
+                <li>Self-motivation</li>
+                <li>Flexible</li>
+                <li>Quick lerner</li>
+            </ul>
+        </li>
+        
+        <li>
+            <h3><a href="#contact"> Contact info</a></h3>
+            <form  id="contact" action="https://www.linkedin.com/home">
+                Phone number: +34 654478897
+                <br>
+                Email: davidpuig@gmail.com
+                <br>
+                Linkedin:<button>GO</button>
+            </form>
+        </li>
+    
+    </ol>
+</div>
+
+</body>
+</html>
